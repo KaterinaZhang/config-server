@@ -6,19 +6,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/KaterinaZhang/config-server.git
+          uri: https://github.com/tw-cloud-native/configs.git
           skipSslValidation: true
           #TODO: support common config
-          search-paths: '{profile}/common,{profile}/{application}'
-bus:
-  enabled: true
-  trace:
-    enabled: true
-  rabbitmq:
-    host: localhost
-    port: 5672
-username: guest
-  password: guest
+          search-paths: '{profile}/{application}'
 eureka:
   instance:
     prefer-ip-address: true
